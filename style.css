@@ -1,0 +1,185 @@
+@font-face {
+    font-family: "norse";
+    src: url("norse.otf");
+}
+
+body{ 
+    margin: 0;
+    padding: 0;
+    height: 1050px;
+}
+.header,.footer,.realForm{
+    height:max(350px,33vh);
+    width:60vw;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+html{
+    font-family:Arial, Helvetica, sans-serif;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+.right,.left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nogap{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs{
+    display: flex;
+    gap:100px;
+}
+
+.realForm{
+
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    justify-content: center;
+    padding-left: 50px;
+    padding-bottom: 25px;
+}
+#text3{
+    font-size: x-large;
+    font-weight:550;
+
+}
+input{
+    border : 1px solid #E5E7EB;
+    border-radius: 5px;
+    height:30px;
+    width: 250px;
+    
+}
+input:focus{
+    outline: none;
+    border-color: blue;
+    background-color: rgb(231, 225, 225);
+}
+
+input:invalid{
+    border-color: red;
+}
+
+input:hover,input:active{
+    border-color: blue;
+}
+.footer{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 40px;
+}
+
+#signup{
+    width:260px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 3px 3px gray;
+    border:none;
+    border-radius: 10px;
+    background-color: #596D48;
+}
+#login{
+    all:unset;
+    color: #596D48;
+    font-weight: bold;
+}
+label{
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header{
+    display: flex;
+    flex-direction:column;
+    font-size: x-large;
+    font-weight:550;
+    align-items: center;
+    gap:30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.text1{
+    margin-top: 100px;
+    display: flex;
+    width:20em;
+}
+.text2{
+    width:20em;
+}
+.header,.footer{
+    background-color: #f7f9fc;
+}
+
+
+.container{
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.image{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.formBody{
+    display: flex;
+    flex-direction: column;
+}
+img{
+    width: 40vw;
+    height:100vh;
+    margin-bottom: 0;
+    flex-grow: 1;
+}
+.odins img{
+    height:130px;
+    width:10vw;
+}
+.odins{
+    position:absolute;
+    top:220px;
+    left: 10vw;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+a{
+    color:white;
+}
+
+.odins div{
+    font-family: "norse";
+    font-size: 10vw;
+    color: white;
+
+}
+.credit{
+    width: 30vw;
+    left:10vw;
+    color:white;
+    position: absolute;
+    bottom:30px;
+}
+.odin{
+    position: absolute;
+    width:40vw;
+    height: 150px;
+    background-color: black;
+    top:220px;
+    opacity: 0.4;
+}
