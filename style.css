@@ -11,7 +11,7 @@ body{
 .header,.footer,.realForm{
     height:max(350px,33vh);
     width:60vw;
-    flex-grow: 1;
+    flex: 1 1 auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -30,6 +30,7 @@ form{
     gap: 20px;
 }
 
+
 .nogap{
     display: flex;
     flex-direction: column;
@@ -37,7 +38,8 @@ form{
 
 .inputs{
     display: flex;
-    gap:100px;
+    gap:6vw;
+
 }
 
 .realForm{
@@ -58,7 +60,7 @@ input{
     border : 1px solid #E5E7EB;
     border-radius: 5px;
     height:30px;
-    width: 250px;
+    width: 20vw;
     
 }
 input:focus{
@@ -104,7 +106,7 @@ label{
 .header{
     display: flex;
     flex-direction:column;
-    font-size: x-large;
+    font-size: 2vw;
     font-weight:550;
     align-items: center;
     gap:30px;
@@ -115,9 +117,11 @@ label{
     margin-top: 100px;
     display: flex;
     width:20em;
+    flex-shrink: 1;
 }
 .text2{
     width:20em;
+    flex-shrink: 1;
 }
 .header,.footer{
     background-color: #f7f9fc;
