@@ -74,4 +74,53 @@
     </div>
 
 </body>
+<script>
+    let passsword,confirmPassword;
+    const passwordDoc = document.querySelector('#password');
+     passwordDoc.addEventListener('keydown',(e)=>{
+     if(e.keyCode === 13)
+     {
+        passsword = passwordDoc.value;
+        console.log(passsword)
+     }})
+     passwordDoc.removeEventListener('keyup',(e)=>{
+     if(e.keyCode === 13)
+     {
+        passsword = passwordDoc.value;
+        console.log(passsword)
+     }
+    })
+
+    const warning = document.createElement('div');
+    document.querySelector('.left').appendChild(warning);
+
+    const confirmPasswordDoc = document.querySelector('#confirmPassword');
+     confirmPasswordDoc.addEventListener('keydown',(e)=>{
+     if(e.keyCode === 13)
+     {
+        
+        confirmPassword = confirmPasswordDoc.value;
+        console.log(confirmPassword)
+        if(passsword!=confirmPassword)
+        {
+            warning.textContent = "passwords must match!";
+            warning.style.color = 'red';
+            
+        }
+        else
+            warning.textContent = "";
+        
+     }
+    })
+    confirmPasswordDoc.removeEventListener('keyup',(e)=>{
+     if(e.keyCode === 13)
+     {
+        confirmPassword = confirmPasswordDoc.value;
+        console.log(confirmPassword)
+    
+     }
+    })
+
+    console.log("well")
+</script>
 </html>
